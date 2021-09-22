@@ -1,0 +1,62 @@
+	1.	<html></html>
+	2.	<head></head>
+	3.	<title></title>
+	4.	<body></body>	
+	5.	<div></div>
+	6.	<a></a>
+	7.	<img>
+	8.	<link>
+	9.   <meta>
+	10. <nav>
+	11. <header>
+12. <section>
+13. <article>
+14. <aside>
+15. <main>
+16. <caption>
+17. <footer>
+18. <hr>
+19. <br>
+20. <figure>
+CSS properties and values – define each with examples as above:
+	1.	color
+	2.	font-family
+	3.	font-size
+	4.	background-color
+	5.	background-image
+	6.	position
+	7.	top
+	8.	left
+	9.	z-index
+	10.	width
+	11.	height
+	12.	visibility
+	13. margin
+	14. padding
+	15. border
+
+•	border:
+•	border-color:
+•	border-width:
+•	border-style:
+•	border-radius:
+•	box-shadow:
+•	cursor:
+•	font-family:
+•	font-size:
+•	font-weight:
+•	font-style:
+•	font-weight:
+•	google fonts:
+•	line-height:
+•	margin-left:
+•	margin-right:
+•	opacity:
+•	padding:
+•	position:
+•	transform:
+•	text-align:
+•	text-shadow:
+•	z-index:
+
+
