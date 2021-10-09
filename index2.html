@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Demo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li {
+            padding: 1em 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li>
+                <span>Adobe</span>
+                <span>Experience Design</span>
+            </li>
+            <li class="items"><a href="#">Explore</a></li>
+            <li class="items"><a href="#">Blog</a></li>
+            <li class="items"><a href="#">Contact</a></li>
+            <li class="items"><a href="#">Feed</a></li>
+            <li class="items"><a href="#">Authors</a></li>
+            <li class="bars"></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
