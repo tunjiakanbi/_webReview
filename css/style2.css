@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links .items a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0.75em;
+    display: block;
+}
+
+/* add animation later */
+
+/* .menu {
+    margin: 3em 0;
+    box-sizing: content-box;
+} */
+
+/* .menu{ */
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0.5em 2em; */
+    background-color: blue; 
+    height: 64px;
+} 
+.brand {
+    /* padding: 3em; */
+    /* height   : 100%; */
+    /* position: relative; */
+    /* z-index: 99; */
+}
+.menu .brand span{
+    display: block;
+    font-size: 1.25em;
+    color: #fff;
+    margin-left: 2em;
+    /* margin-top: 2em; */
+}
+
+.nav-links {
+    display: flex;
+    /* display: block; */
+    /* display: none; */
+}
+
+li.items {
+    list-style: none;
+}
+.toggle {
+    /* position: absolute; */
+    /* top: 1.25em; */
+    /* right: 0.75em; */
+    /* display: none; remove to test breakpoint */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    margin-right: 2em;
+    /* padding: 3em 0; */
+}
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #FFF;
+}
+@media screen and (max-width: 768px){
+    .toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        transition: all 2s ease-in-out;
+        /* remove to test breakpoint */
+    }
+    .active {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 64px;
+        background-color: red;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        height: calc(100vh - 64px);
+        transition: flex 2s ease-in-out;
+        /* display: none; */
+        /* remove to test breakpoint */
+    }
+
+}

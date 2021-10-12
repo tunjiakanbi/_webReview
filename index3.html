@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Demo</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <section class="menu-wrap">
+        <div class="brand">
+            <span>XD</span>
+            <span>Adobe Experience Design</span>
+        </div>
+        <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <ul class="nav-links">
+            <li class="items"><a href="#">Explore</a></li>
+            <li class="items"><a href="#">Blog</a></li>
+            <li class="items"><a href="#">Contact</a></li>
+            <li class="items"><a href="#">Feed</a></li>
+            <li class="items"><a href="#">Authors</a></li>
+        </ul>
+    </section>
+    </nav>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle');
+        const navLinks = document.querySelector('.nav-links');
+        console.log(navLinks);
+        toggleBtn.addEventListener('click', ()=> {
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

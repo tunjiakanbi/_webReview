@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav Demo</title>
     <style>
         * {
@@ -14,40 +14,91 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        ul {
+        /* ul {
             list-style: none;
+        } */
+
+       .nav-links .items a {
+            text-decoration: none;
+            color: #fff;
+            padding: 1em 0.75em;
+            display: block;
         }
 
-        a {
-            text-decoration: none;
-        }
+        /* add animation later */
 
         .menu {
             display: flex;
             /* flex-wrap: wrap; */
             justify-content: space-between;
             align-items: center;
+            padding: 0.5em 2em;
+            background-color: blue;
         }
 
-        li {
-            padding: 1em 2em;
+        .menu .brand span{
+            display: block;
+            font-size: 1.25em;
+            color: #fff;
+        }
+
+        .nav-links {
+            /* display: flex; */
+            display: block;
+            /* display: none; */
+        }
+
+        li.items {
+            list-style: none;
+        }
+        .toggle {
+            position: absolute;
+            top: 1.25em;
+            right: 0.75em;
+            display: none;
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+
+        }
+        .bar {
+            height: 3px;
+            width: 100%;
+            background-color: #FFF;
+        }
+        @media screen and (max-width: 768px){
+            .toggle {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+            }
+            .menu {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
-            <li>
-                <span>Adobe</span>
-                <span>Experience Design</span>
-            </li>
+    <nav class="menu">
+        <div class="brand">
+            <span>XD</span>
+            <span>Adobe Experience Design</span>
+        </div>
+        <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <ul class="nav-links">
             <li class="items"><a href="#">Explore</a></li>
             <li class="items"><a href="#">Blog</a></li>
             <li class="items"><a href="#">Contact</a></li>
             <li class="items"><a href="#">Feed</a></li>
             <li class="items"><a href="#">Authors</a></li>
-            <li class="bars"></li>
         </ul>
     </nav>
 </body>
